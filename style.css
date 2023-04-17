@@ -1,0 +1,178 @@
+
+body{
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1e313e;
+    padding: 10px;
+}
+
+.item{
+    color: #efd3a2;
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item:hover{
+    text-decoration:underline
+}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    text-transform: uppercase;
+    color: #1e313e;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-about{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e313e;
+    padding: 60px;
+}
+
+.about-us{
+    align-self: center;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    background-color: #1e313e;
+    padding: 80px;
+    color: white;
+}
+
+.reason-block{
+    display: flex;
+    padding: 30px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    justify-content: space-around;
+}
+
+span{
+    color: #1e313e;
+    background-color:#bb8a5e;
+    border-radius: 50px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 70px;
+    margin: 40px;
+    padding: 20px;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    background-color: #1e313e;
+    padding: 60px;
+}
+
+.money{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #1e313e;
+    color: white;
+    padding: 10px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    background-color: #1e313e;
+    padding: 50px;
+}
+
+.footer-container{
+    background-color: #1e313e;
+    color: #bb8a5e;
+    padding: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+a {
+    color:#bb8a5e ;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+button{
+    padding: 30px;
+    margin:10px;
+    border-radius: 30px;
+    background-color: #1e313e;
+    text-transform: uppercase;
+}
+
+button:hover{
+    text-decoration: underline;
+    color: #bb8a5e;
+}
+
+.backToTop{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.backToTop:hover{
+    text-decoration: underline;
+}
+
+.mail:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width:800px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .money{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgMoney{
+        width: 150px;  
+    }
+
+    .services{
+       display: flex;
+       justify-content: space-evenly;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .footer-container{
+        padding: 15px;
+    }
+}
