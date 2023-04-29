@@ -154,6 +154,7 @@ button:hover{
     .wrapper{
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     .money{
@@ -174,5 +175,21 @@ button:hover{
 
     .footer-container{
         padding: 15px;
+    }
+
+}
+
+@media all and (max-width:500px) {
+    img{
+        width: 100%;
+    }
+
+    span{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .reason-block{
+        padding: 10px;
     }
 }
