@@ -1,7 +1,7 @@
-
-body{
+body {
     margin: 0;
 }
+
 .nav{
     display: flex;
     justify-content: flex-end;
@@ -16,10 +16,6 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-}
-
-.item:hover{
-    text-decoration:underline
 }
 
 .section-header{
@@ -44,31 +40,31 @@ body{
 .about-us{
     align-self: center;
     padding: 10px;
-    color: white;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    font-family: 'Montserrat',sans-serif;
 }
 
 .wrapper{
     display: flex;
     background-color: #1e313e;
     padding: 80px;
-    color: white;
+    color: #ffffff;
 }
 
 .reason-block{
-    display: flex;
     padding: 30px;
-    font-family:'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
     justify-content: space-around;
 }
 
-span{
+.span{
     color: #1e313e;
-    background-color:#bb8a5e;
+    background-color: #bb8a5e;
     border-radius: 50px;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     margin: 40px;
     padding: 20px;
@@ -78,18 +74,17 @@ span{
     display: flex;
     justify-content: center;
     background-color: #1e313e;
-    padding: 60px;
+    padding: 50px;
 }
 
-.money{
+.price{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family:'Montserrat', sans-serif;
-    font-size: 18px;
+    justify-content: center;
     background-color: #1e313e;
-    color: white;
+    color: #ffffff;
+    font-size: 18px;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .map{
@@ -99,97 +94,87 @@ span{
     padding: 50px;
 }
 
-.footer-container{
+.footer-container {
     background-color: #1e313e;
-    color: #bb8a5e;
     padding: 5px;
-    font-size: 16px;
-    text-transform: uppercase;
 }
 
-a {
-    color:#bb8a5e ;
+.footer {
+    color: #efd3a2;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: #efd3a2;
     text-decoration: none;
     font-size: 16px;
 }
 
 button{
     padding: 30px;
-    margin:10px;
+    margin: 10px;
     border-radius: 30px;
     background-color: #1e313e;
-    text-transform: uppercase;
 }
 
-button:hover{
-    text-decoration: underline;
-    color: #bb8a5e;
-}
-
-.backToTop{
-    display: flex;
-    justify-self: flex-end;
-    align-self: flex-end;
-}
-
-.backToTop:hover{
-    text-decoration: underline;
-}
-
-.mail:hover{
-    text-decoration: underline;
-}
-
-@media all and (max-width:800px) {
+@media all and (max-width: 800px) {
     .nav{
         display: flex;
         flex-direction: column;
     }
-
-    .section-about{
-        display: flex;
+    
+    .section-about {
         flex-wrap: wrap;
     }
 
-    .wrapper{
-        display: flex;
-        flex-direction: column;
+    .wrapper {
         padding: 0;
+        flex-wrap: wrap;
     }
 
-    .money{
-        display: flex;
-        justify-content: center;
+    div.gmap_canvas, div.mapouter, iframe{
+        width: 100%;
     }
-
-    .imgMoney{
-        width: 150px;  
-    }
-
-    .services{
-       display: flex;
-       justify-content: space-evenly;
-        max-width: 400px;
-        padding: 10px;
-    }
-
-    .footer-container{
-        padding: 15px;
-    }
-
+    
 }
 
-@media all and (max-width:500px) {
+@media all and (max-width:500px){
+
     img{
         width: 100%;
     }
 
-    span{
-        padding: 10px;
-        margin: 10px;
+    .span{
+        padding: 5px;
+        margin: 5px;
     }
 
-    .reason-block{
+    .reason-block {
         padding: 10px;
-    }
 }
+    .wrapper {
+    font-size: 10px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+    .section-about{
+        padding: 3px;
+        margin: 3px;
+
+    }
+
+    .about-us{
+        font-size: 10px;
+    }
+
+    .price{
+        font-size: 10px;
+    }
+
+}
+
+
+
