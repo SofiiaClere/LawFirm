@@ -1,7 +1,7 @@
-body {
+
+body{
     margin: 0;
 }
-
 .nav{
     display: flex;
     justify-content: flex-end;
@@ -16,6 +16,10 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+.item:hover{
+    text-decoration:underline
 }
 
 .section-header{
@@ -40,31 +44,31 @@ body {
 .about-us{
     align-self: center;
     padding: 10px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    color: white;
     font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .wrapper{
     display: flex;
     background-color: #1e313e;
     padding: 80px;
-    color: #ffffff;
+    color: white;
 }
 
 .reason-block{
-    padding: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     display: flex;
+    padding: 30px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
     justify-content: space-around;
 }
 
-.span{
+span{
     color: #1e313e;
-    background-color: #bb8a5e;
+    background-color:#bb8a5e;
     border-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Montserrat', sans-serif;
     font-size: 70px;
     margin: 40px;
     padding: 20px;
@@ -74,17 +78,18 @@ body {
     display: flex;
     justify-content: center;
     background-color: #1e313e;
-    padding: 50px;
+    padding: 60px;
 }
 
-.price{
+.money{
     display: flex;
-    justify-content: center;
-    background-color: #1e313e;
-    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
     font-size: 18px;
+    background-color: #1e313e;
+    color: white;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .map{
@@ -94,87 +99,97 @@ body {
     padding: 50px;
 }
 
-.footer-container {
+.footer-container{
     background-color: #1e313e;
+    color: #bb8a5e;
     padding: 5px;
-}
-
-.footer {
-    color: #efd3a2;
     font-size: 16px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
 }
 
-a{
-    color: #efd3a2;
+a {
+    color:#bb8a5e ;
     text-decoration: none;
     font-size: 16px;
 }
 
 button{
     padding: 30px;
-    margin: 10px;
+    margin:10px;
     border-radius: 30px;
     background-color: #1e313e;
+    text-transform: uppercase;
 }
 
-@media all and (max-width: 800px) {
+button:hover{
+    text-decoration: underline;
+    color: #bb8a5e;
+}
+
+.backToTop{
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.backToTop:hover{
+    text-decoration: underline;
+}
+
+.mail:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width:800px) {
     .nav{
         display: flex;
         flex-direction: column;
     }
-    
-    .section-about {
+
+    .section-about{
+        display: flex;
         flex-wrap: wrap;
     }
 
-    .wrapper {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
         padding: 0;
-        flex-wrap: wrap;
     }
 
-    div.gmap_canvas, div.mapouter, iframe{
-        width: 100%;
+    .money{
+        display: flex;
+        justify-content: center;
     }
-    
+
+    .imgMoney{
+        width: 150px;  
+    }
+
+    .services{
+       display: flex;
+       justify-content: space-evenly;
+        max-width: 400px;
+        padding: 10px;
+    }
+
+    .footer-container{
+        padding: 15px;
+    }
+
 }
 
-@media all and (max-width:500px){
-
+@media all and (max-width:500px) {
     img{
         width: 100%;
     }
 
-    .span{
-        padding: 5px;
-        margin: 5px;
-    }
-
-    .reason-block {
+    span{
         padding: 10px;
-}
-    .wrapper {
-    font-size: 10px;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-    .section-about{
-        padding: 3px;
-        margin: 3px;
-
+        margin: 10px;
     }
 
-    .about-us{
-        font-size: 10px;
+    .reason-block{
+        padding: 10px;
     }
-
-    .price{
-        font-size: 10px;
-    }
-
 }
-
-
-
